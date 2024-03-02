@@ -55,8 +55,8 @@ struct GraphicShapeView: View {
     }
 }
 
-struct GraphicShapeView_Previews: PreviewProvider {
-    static var previews: some View {
-        GraphicShapeView(graphic: Graphic.smallSet.first!)
-    }
-}
+//struct GraphicShapeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GraphicShapeView(graphic: Graphic.smallSet.first!)
+//    }
+//}

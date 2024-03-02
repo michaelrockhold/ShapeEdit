@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LibraryView: View {
+    @Environment(\.dismiss) private var dismiss
 
     struct Item: Identifiable {
 
@@ -82,6 +83,7 @@ struct LibraryView: View {
                         graphic.id = UUID().uuidString
                         graphic.size = CGSize(width: 100.0, height: 100.0)
                         document.graphics.append(graphic)
+                        dismiss()
                     }
                 }
             }

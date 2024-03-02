@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ECDB3B02B93A2AE004A1740 /* NewItemMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDB3AF2B93A2AE004A1740 /* NewItemMenu.swift */; };
+		2ECDB3B12B93A2AE004A1740 /* NewItemMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECDB3AF2B93A2AE004A1740 /* NewItemMenu.swift */; };
 		F41779E926BFA69000C43EBF /* Graphic+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41779E826BFA69000C43EBF /* Graphic+Test.swift */; };
 		F41779EA26BFA69000C43EBF /* Graphic+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41779E826BFA69000C43EBF /* Graphic+Test.swift */; };
 		F428FBB626BD99A300C07179 /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428FBB526BD99A300C07179 /* InspectorView.swift */; };
@@ -43,8 +45,6 @@
 		F4ED8A1926B46C02004E7307 /* AdvancedScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = F4ED8A1826B46C02004E7307 /* AdvancedScrollView */; };
 		F4ED8A1B26B48916004E7307 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A1A26B48916004E7307 /* GridView.swift */; };
 		F4ED8A1C26B48916004E7307 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A1A26B48916004E7307 /* GridView.swift */; };
-		F4ED8A2026B80123004E7307 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A1F26B80123004E7307 /* NavigatorView.swift */; };
-		F4ED8A2126B80123004E7307 /* NavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A1F26B80123004E7307 /* NavigatorView.swift */; };
 		F4ED8A2326B8306E004E7307 /* GraphicShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A2226B8306E004E7307 /* GraphicShapeView.swift */; };
 		F4ED8A2426B8306E004E7307 /* GraphicShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED8A2226B8306E004E7307 /* GraphicShapeView.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ECDB3AF2B93A2AE004A1740 /* NewItemMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemMenu.swift; sourceTree = "<group>"; };
 		F41779E826BFA69000C43EBF /* Graphic+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graphic+Test.swift"; sourceTree = "<group>"; };
 		F428FBB526BD99A300C07179 /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
 		F42E979326BC43FC001C37C2 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		F457A1AD26CADCBF003464CA /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		F47A244E26BAE8D500977136 /* DragInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragInfo.swift; sourceTree = "<group>"; };
 		F4ED8A1A26B48916004E7307 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		F4ED8A1F26B80123004E7307 /* NavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorView.swift; sourceTree = "<group>"; };
 		F4ED8A2226B8306E004E7307 /* GraphicShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,11 +246,11 @@
 		F4ED8A1E26B800C5004E7307 /* Auxiliary */ = {
 			isa = PBXGroup;
 			children = (
-				F4ED8A1F26B80123004E7307 /* NavigatorView.swift */,
 				F4ED8A2226B8306E004E7307 /* GraphicShapeView.swift */,
 				F4536CC626B907A400FCD6BA /* SelectionView.swift */,
 				F47A244E26BAE8D500977136 /* DragInfo.swift */,
 				F42E979326BC43FC001C37C2 /* LibraryView.swift */,
+				2ECDB3AF2B93A2AE004A1740 /* NewItemMenu.swift */,
 			);
 			path = Auxiliary;
 			sourceTree = "<group>";
@@ -340,8 +340,9 @@
 		F44D53DD26AA03FD00A757FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					F44D53E926AA040000A757FB = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -429,8 +430,8 @@
 				F42E979426BC43FC001C37C2 /* LibraryView.swift in Sources */,
 				F4ED8A2326B8306E004E7307 /* GraphicShapeView.swift in Sources */,
 				F44D540C26AA040000A757FB /* ShapeEditApp.swift in Sources */,
+				2ECDB3B02B93A2AE004A1740 /* NewItemMenu.swift in Sources */,
 				F44A417426CD864E007EF5B6 /* LineWidthRowView.swift in Sources */,
-				F4ED8A2026B80123004E7307 /* NavigatorView.swift in Sources */,
 				F44D542A26AA95FE00A757FB /* CanvasView.swift in Sources */,
 				F44D542326AA0A2F00A757FB /* Graphic.swift in Sources */,
 				F41779E926BFA69000C43EBF /* Graphic+Test.swift in Sources */,
@@ -453,8 +454,8 @@
 				F42E979526BC43FC001C37C2 /* LibraryView.swift in Sources */,
 				F4ED8A2426B8306E004E7307 /* GraphicShapeView.swift in Sources */,
 				F44D540D26AA040000A757FB /* ShapeEditApp.swift in Sources */,
+				2ECDB3B12B93A2AE004A1740 /* NewItemMenu.swift in Sources */,
 				F44A417526CD864E007EF5B6 /* LineWidthRowView.swift in Sources */,
-				F4ED8A2126B80123004E7307 /* NavigatorView.swift in Sources */,
 				F44D542B26AA95FE00A757FB /* CanvasView.swift in Sources */,
 				F44D542426AA0A2F00A757FB /* Graphic.swift in Sources */,
 				F41779EA26BFA69000C43EBF /* Graphic+Test.swift in Sources */,
@@ -531,9 +532,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -590,9 +593,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -614,15 +619,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEVELOPMENT_TEAM = MYU6NE7WY6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.ShapeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.appel-rockhold.ShapeEdit";
 				PRODUCT_NAME = ShapeEdit;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -636,15 +641,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEVELOPMENT_TEAM = MYU6NE7WY6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.ShapeEdit;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.appel-rockhold.ShapeEdit";
 				PRODUCT_NAME = ShapeEdit;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -661,7 +666,8 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = MYU6NE7WY6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -669,7 +675,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.ShapeEdit;
 				PRODUCT_NAME = ShapeEdit;
 				SDKROOT = macosx;
@@ -685,7 +691,8 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UEQ8YHF529;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = MYU6NE7WY6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -693,7 +700,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.danokhin.ShapeEdit;
 				PRODUCT_NAME = ShapeEdit;
 				SDKROOT = macosx;
@@ -752,6 +759,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UEQ8YHF529;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -774,6 +782,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UEQ8YHF529;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
